@@ -23,5 +23,17 @@
             this.comb = comb;
             this.date = DateTime.Now;
         }
+
+
+        // Metode
+        public int CorrectNumbersCount(List<int> numbers)
+        {
+            int correct = 0;
+            foreach (int number in numbers)
+                if (this.comb.Contains(number))
+                    correct++;
+            return correct;
+        }
+
     }
 }

@@ -12,18 +12,15 @@ namespace LotoConsoleApp
         {
             Console.WriteLine("Loto");
 
-            LotoRandom rnd = new LotoRandom(39);
+            LotoRandom rnd = new LotoRandom(combLength: 7, maxNumber: 39);
             while (true)
             {
-                Console.WriteLine(rnd.Next());
-                List<int> comb = rnd.NextCombintaton(7);
-                Ticket t1 = new Ticket(comb);
-                Ticket t2 = new Ticket(rnd.NextCombintaton(7));
+                Ticket t1 = new Ticket(rnd.NextCombintaton(7));
+                List<int> drawn = rnd.NextCombintaton(7);
+                Ticket t2 = new Ticket(drawn);
+                int c = t2.CorrectNumbersCount(drawn);
 
-                if (t1.Equals(t2))
-                {
-                    Console.WriteLine("!Enako!");
-                }
+
             }
         }
     }

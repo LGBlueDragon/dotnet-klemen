@@ -7,18 +7,15 @@ namespace Loto
     {
         private static Random rnd = new Random();
         private int max;
+        private int combLength;
 
-        // Konstruktor, inicializiramo instanco z največjo številko, ki se lahko pojavlja v kombinacijah.
-        public LotoRandom(int maxNumber)
+        // Konstruktor
+        // inicializiramo instanco z dolžino kombinacije in
+        // največjo številko, ki se lahko pojavlja v kombinacijah.
+        public LotoRandom(int combLength, int maxNumber)
         {
             this.max = maxNumber;
-        }
-
-
-        // Vrača naslednje (psevdo) naključno število
-        public int Next()
-        {
-            return rnd.Next(this.max) + 1;
+            this.combLength = combLength;
         }
 
 
@@ -38,6 +35,12 @@ namespace Loto
 
             tmp.Sort();
             return tmp;
+        }
+
+        // Vrača naslednje (psevdo) naključno število po pravilih
+        private int Next()
+        {
+            return rnd.Next(this.max) + 1;
         }
     }
 }
