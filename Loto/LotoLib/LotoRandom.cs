@@ -27,7 +27,7 @@ namespace Loto
             do
             {
                 int newNumber = Next();
-                if (tmp.Contains(newNumber))
+                if (tmp.Contains(newNumber))    // številka že obstaja, gremo znova
                     continue;
                 else
                     tmp.Add(newNumber);
@@ -37,7 +37,7 @@ namespace Loto
             return tmp;
         }
 
-        // Vrača naslednje (psevdo) naključno število po pravilih
+        // Vrača naslednje (psevdo) naključno število po naših pravilih
         private int Next()
         {
             return rnd.Next(this.max) + 1;
