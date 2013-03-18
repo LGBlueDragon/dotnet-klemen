@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotoConsoleApp", "Loto\LotoConsoleApp.csproj", "{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotoLib", "LotoLib\LotoLib.csproj", "{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Debug|x86.ActiveCfg = Debug|x86
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Debug|x86.Build.0 = Debug|x86
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Release|Any CPU.ActiveCfg = Release|x86
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Release|x86.ActiveCfg = Release|x86
+		{D6C3C6D9-9605-42CC-A6F5-8B51A5A6E927}.Release|x86.Build.0 = Release|x86
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7E8EE9E8-6EA1-4B2B-B10A-3CD7BDDA2530}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
