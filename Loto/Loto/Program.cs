@@ -8,20 +8,32 @@ namespace LotoConsoleApp
 {
     class Program
     {
+        static Dictionary<string,List<Ticket>> tickets = new Dictionary<string,List<Ticket>>();
+
         static void Main(string[] args)
         {
             LotoRandom rnd = new LotoRandom(combLength: 7, maxNumber: 39);
-            Ticket t1 = new Ticket(rnd.NextCombintaton(7));
-            Console.WriteLine(t1.ToString());
+            Console.Write("Enter number of tickets you want: ");
+            int numbtick = int.Parse(Console.ReadLine());
 
-            List<int> drawn = rnd.NextCombintaton(7);
-            Ticket t2 = new Ticket(drawn);
-            Console.WriteLine(t2.ToString());
+            for (int i = 0; i < numbtick; i++)
+            {
+                Ticket tmp = IssueTicket(rnd);
+            }
+
 
             Console.WriteLine("Total ticket issued: " + Ticket.TotalCount());
+            Console.ReadKey();
+        }
 
-            int c = t2.CorrectNumbersCount(drawn);
-            
+        static Ticket IssueTicket(LotoRandom rnd)
+        {
+            Ticket temp = new Ticket(rnd.NextCombintaton());
+            Console.Write("Enter ticket owner: ");
+            temp.Owner = Console.ReadLine();
+            Console.WriteLine(temp.ToString());
+
+            return temp;
         }
     }
 }

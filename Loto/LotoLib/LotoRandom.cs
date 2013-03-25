@@ -21,7 +21,7 @@ namespace Loto
 
         // Vrača naslednji (psevdo) naključno kombinacijo
         // samodejno skrbi, da se števila ne ponavljajo
-        public List<int> NextCombintaton(int len)
+        public List<int> NextCombintaton()
         {
             List<int> tmp = new List<int>();
             do
@@ -31,7 +31,7 @@ namespace Loto
                     continue;
                 else
                     tmp.Add(newNumber);
-            } while (tmp.Count < len);
+            } while (tmp.Count < this.combLength);
 
             tmp.Sort();
             return tmp;

@@ -41,6 +41,21 @@
             get { return this.date; }
         }
 
+        public string GetOwner()
+        {
+            return "This ticket is owned by: " + this.owner;
+        }
+
+        public void SetOwner(string tempOwner)
+        {
+            this.owner = tempOwner + " " +DateTime.UtcNow;
+        }
+
+        public string Owner
+        {
+            get { return this.owner; }
+            set { this.owner = value; }
+        }
 
         // Metode
 
@@ -67,6 +82,7 @@
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("Serial number: {0}\n", this.serial);
             sb.AppendFormat("Issue date: {0}\n", this.date.ToShortDateString());
+            sb.AppendFormat("Ticket owner: {0}\n", this.Owner);
             sb.Append("Combination: ");
             int count = 0;
             foreach (int num in this.comb)
