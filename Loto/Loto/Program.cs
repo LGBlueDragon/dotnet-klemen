@@ -29,8 +29,8 @@ namespace LotoConsoleApp
         static Ticket IssueTicket(LotoRandom rnd)
         {
             Ticket temp = new Ticket(rnd.NextCombintaton());
-            Console.Write("Enter ticket owner: ");
-            temp.Owner = Console.ReadLine();
+            /*Console.Write("Enter ticket owner: ");
+            temp.Owner = Console.ReadLine();*/
             Console.WriteLine(temp.ToString());
 
             return temp;

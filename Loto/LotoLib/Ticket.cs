@@ -80,10 +80,10 @@
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Serial number: {0}\n", this.serial);
+            /*sb.AppendFormat("Serial number: {0}\n", this.serial);
             sb.AppendFormat("Issue date: {0}\n", this.date.ToShortDateString());
             sb.AppendFormat("Ticket owner: {0}\n", this.Owner);
-            sb.Append("Combination: ");
+            sb.Append("Combination: ");*/
             int count = 0;
             foreach (int num in this.comb)
             {
