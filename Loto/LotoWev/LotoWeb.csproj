@@ -51,6 +51,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="drawnnum.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="index.aspx" />
     <Content Include="mystyle.css" />
     <Content Include="validator.aspx" />

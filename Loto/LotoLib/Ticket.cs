@@ -29,6 +29,12 @@
             this.comb = comb;
         }
 
+        public Ticket(DateTime date, List<int> comb)
+        {
+            this.serial = ++count;
+            this.date = date;
+            this.comb = comb;
+        }
 
         // Accessorji
         public int Serial
@@ -75,7 +81,7 @@
                     correct++;
             return correct;
         }
-
+        //DN:Metoda ki ti vrne pravilne številke
 
         public override string ToString()
         {
@@ -93,5 +99,7 @@
             }
             return sb.ToString();
         }
+
+
     }
 }

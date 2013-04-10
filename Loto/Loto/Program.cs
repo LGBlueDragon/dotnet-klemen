@@ -13,14 +13,24 @@ namespace LotoConsoleApp
         static void Main(string[] args)
         {
             LotoRandom rnd = new LotoRandom(combLength: 7, maxNumber: 39);
-            Console.Write("Enter number of tickets you want: ");
-            int numbtick = int.Parse(Console.ReadLine());
+            Lottery lot = new Lottery();
+            List<int> tmp2 = new List<int>();
 
-            for (int i = 0; i < numbtick; i++)
+            List<int> numbers = rnd.NextCombintaton();
+            
+            Ticket ticket = new Ticket(numbers);
+
+            tmp2 = lot.FindDrawnNumbers(DateTime.UtcNow);
+
+            if (tmp2 == null)
             {
-                Ticket tmp = IssueTicket(rnd);
+                Console.WriteLine("NONE FOUND!");
             }
-
+            else
+            {
+                int wc = ticket.CorrectNumbersCount(tmp2);
+                Console.WriteLine(wc);
+            }
 
             Console.WriteLine("Total ticket issued: " + Ticket.TotalCount());
             Console.ReadKey();
